@@ -29,6 +29,7 @@ public class App {
 		driver.findElement(By.name("login")).click();
 		driver.quit();
 		
+		
 	}
 
 	public static void sleep(int seconds) { // metoda, która "śpi" - usypia program na chwilę, żeby nie przeciążyć serwera i móc obserwować ruch na stronie
