@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.*;
 
+@Ignore
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)  // dzieki temu będzie sortował wg kolejności alfabetycznej
 public class LoginTest {
 	
@@ -49,7 +50,7 @@ public class LoginTest {
 		driver.findElement(By.name("userName")).sendKeys("Asiaws");
 		driver.findElement(By.name("password")).sendKeys("qwe123");
 		driver.findElement(By.name("login")).click();
-		driver.findElement(By.xpath("/html/body/div[1]/table/tbody/tr/td[2]/table/tbody/tr[4]"
+		driver.findElement(By.xpath("/html/body/div[1]/table/tbody/tr/td[2]/table/tbody/tr[4]"  // pole typu radio
 				+ "/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[2]/td[2]/b/font/input[2]")).click();
 		Init.sleep(2);
 		Select passCount = new Select(driver.findElement(By.name("passCount")));  // pole typu select
