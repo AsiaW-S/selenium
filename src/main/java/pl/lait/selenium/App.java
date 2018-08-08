@@ -15,6 +15,9 @@ public class App {
 		System.out.println("Hello World!");
 		
 
+
 	} // end app
 
-}
+	
+} // end class
+//>>>>>>> branch 'junitExample' of https://github.com/AsiaW-S/selenium.git
