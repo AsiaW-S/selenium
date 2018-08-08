@@ -1,4 +1,4 @@
-package pl.lait.selenium;
+package pl.lait.selenium;  // ta metoda jest lepsza, jeżeli mamy do przetestowania małą ilość elementów na stronie,
 
 import org.junit.Before;
 import org.junit.runners.MethodSorters;

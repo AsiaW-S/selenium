@@ -6,19 +6,20 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-public class Init {
+public class Init {  //klasa
 
-	static WebDriver driver = null;
+	static WebDriver driver = null;  // zmienna statyczna driver, WebDriver to typ zmiennej driver
 	
-	public static WebDriver getDriver() {
-		System.setProperty("webdriver.gecko.driver", "/home/mariusz/Dokumenty/geckodriver/geckodriver");
+	public static WebDriver getDriver() {  // metoda, która zwraca zmienna typu WebDriver
+		System.setProperty("webdriver.gecko.driver", "/home/mariusz/Dokumenty/geckodriver/geckodriver");  //property = właściwość
 
-		DesiredCapabilities cap = DesiredCapabilities.firefox();
+		DesiredCapabilities cap = DesiredCapabilities.firefox();  // utworzenie obiektu
 		if (driver == null) {    // po to żeby nie otwierało się wiele okien Firefox
 			driver = new FirefoxDriver(cap);
 			driver.get("http://newtours.demoaut.com");
-			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-			driver.manage().window().maximize();
+			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS); //Określa czas, jaki sterownik powinien poczekać na 
+																			//wyszukanie elementu, jeśli nie jest on natychmiast obecny.
+			driver.manage().window().maximize();  // powiększa okno przeglądarki, jeśli jeszcze nie jest powiększone 
 			return driver;
 		} else {
 			return driver;
