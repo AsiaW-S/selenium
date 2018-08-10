@@ -11,7 +11,7 @@ import pl.lait.pageObjects.Reservation2Page;
 import pl.lait.pageObjects.Reservation3Page;
 import pl.lait.pageObjects.ReservationPage;
 
-
+@Ignore
 public class ReservationFormTest {
 
 	WebDriver driver;
