@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.*;
 
-@Ignore
+
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)  // dzieki temu będzie sortował wg kolejności alfabetycznej
 public class LoginTest {
 	
